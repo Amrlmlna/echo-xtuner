@@ -30,7 +30,7 @@ with read_base():
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = 'mistralai/Mistral-7B-v0.1'
+pretrained_model_name_or_path = 'internlm/internlm-7b'
 
 # Data
 data_path = '/kaggle/input/echo-combined-data-v1/data.json'
