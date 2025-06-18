@@ -30,10 +30,11 @@ with read_base():
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = "internlm/internlm-7b"
+pretrained_model_name_or_path = 'mistralai/Mistral-7B-v0.1'
 
 # Data
-data_path = "./data.json"
+data_path = '/kaggle/input/echo-combined-data-v1/data.json'
+work_dir = '/kaggle/working/echo_output'
 prompt_template = PROMPT_TEMPLATE.default
 max_length = 2048
 pack_to_max_length = True
@@ -56,7 +57,7 @@ save_total_limit = 2  # Maximum checkpoints to keep (-1 means unlimited)
 # Evaluate the generation performance during the training
 evaluation_freq = 500
 SYSTEM = ""
-evaluation_inputs = ["请给我介绍五个上海的景点", "Please tell me five scenic spots in Shanghai"]
+evaluation_inputs = ["Please tell me five scenic spots in Shanghai"]
 
 #######################################################################
 #                      PART 2  Model & Tokenizer                      #
